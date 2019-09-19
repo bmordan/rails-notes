@@ -1,0 +1,7 @@
+<%=form_with model: [@user, @user.notes.build], local: true do |f|%>
+    <article class="note">
+        <%=f.text_area :text%>
+    </article>
+    <%=f.select :cat, options: ["Shopping", "Internet", "Education"]%>
+    <%=f.submit%>
+<%end%>

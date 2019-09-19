@@ -1,0 +1,16 @@
+@startuml
+    !define table(x) class x << T, #FFAAAA >>
+
+    table(users) {
+        id INTEGER
+        username TEXT
+    }
+
+    table(notes) {
+        cat: TEXT
+        text:TEXT
+        user_id: INTEGER
+    }
+
+    users::id--{notes::user_id
+@enduml

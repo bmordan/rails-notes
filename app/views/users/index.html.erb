@@ -1,0 +1,4 @@
+<%@users.each do |user|%>
+    <div><%=link_to user.name, user_path(user)%></div>
+<%end%>
+<div><%=link_to "add a user", new_user_url%><div>
